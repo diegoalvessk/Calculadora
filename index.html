@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <section class="display" aria-label="Tela da calculadora">
+      <span id="previous-operation"></span>
+      <output id="current-operation">0</output>
+    </section>
+
+    <section class="buttons" aria-label="Botoes da calculadora">
+      <button type="button" class="button action" id="clear">C</button>
+      <button type="button" class="button action" id="delete">DEL</button>
+      <button type="button" class="button operator" data-operator="%">%</button>
+      <button type="button" class="button operator" data-operator="/">/</button>
+
+      <button type="button" class="button number" data-number="7">7</button>
+      <button type="button" class="button number" data-number="8">8</button>
+      <button type="button" class="button number" data-number="9">9</button>
+      <button type="button" class="button operator" data-operator="*">x</button>
+
+      <button type="button" class="button number" data-number="4">4</button>
+      <button type="button" class="button number" data-number="5">5</button>
+      <button type="button" class="button number" data-number="6">6</button>
+      <button type="button" class="button operator" data-operator="-">-</button>
+
+      <button type="button" class="button number" data-number="1">1</button>
+      <button type="button" class="button number" data-number="2">2</button>
+      <button type="button" class="button number" data-number="3">3</button>
+      <button type="button" class="button operator" data-operator="+">+</button>
+
+      <button type="button" class="button number zero" data-number="0">0</button>
+      <button type="button" class="button number" data-number=".">.</button>
+      <button type="button" class="button equals" id="equals">=</button>
+    </section>
+  </main>
+</body>
+</html>
